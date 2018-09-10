@@ -36,6 +36,20 @@ namespace gitOvning
                     Console.Write("Mata in en mening, vilken som helst: ");
                     mening = Console.ReadLine();
                     orden = mening.Split(' ');
+                    Array.Sort(orden, (x, y) => x.Length.CompareTo(y.Length));
+                    Array.Reverse(orden);
+
+                    for (int i = 0; i < orden.Length; i++)
+                    {
+                        Console.WriteLine(orden[i]);
+                    }
+                    Console.WriteLine(" ");
+                    Array.Reverse(orden);
+                    for (int i = 0; i < orden.Length; i++)
+                    {
+                        Console.WriteLine(orden[i]);
+                    }
+                    Console.ReadLine();
                     break;
             } 
                 
