@@ -56,7 +56,7 @@ namespace gitOvning
                     Console.Write("Mata in en mening, vilken som helst: ");
                     mening = Console.ReadLine();
                     orden = mening.Split(' ');
-                    
+                    awdawdasd
                     
 
                     break;
