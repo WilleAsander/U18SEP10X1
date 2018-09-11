@@ -121,7 +121,31 @@ namespace gitOvning
                     Console.ReadLine();
 
                     break;
-                
+
+                case "f":
+                    bool sant = true;
+                    int tal = 0;
+                    Random slump = new Random();
+                    tal = slump.Next(1, 21);
+
+
+                    while (sant)
+                    {
+                        Console.WriteLine("Gissa på ett tal mellan 1 & 21");
+                        Console.Write("Din gissning: ");
+                        int gissning = int.Parse(Console.ReadLine());
+                        if (gissning == tal)
+                        {
+                            Console.WriteLine("Du gissade rätt!! grattis");
+                            sant = false;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Du gissade fel!");
+                        }
+                    }
+                    Console.ReadLine();
+                    break;
             } 
                 
         }
