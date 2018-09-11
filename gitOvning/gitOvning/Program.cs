@@ -51,8 +51,20 @@ namespace gitOvning
                     }
                     Console.ReadLine();
                     break;
+
+                case "c":
+                    Console.Write("Mata in en mening, vilken som helst: ");
+                    mening = Console.ReadLine();
+                    orden = mening.Split(' ');
+                    
+                    
+
+                    break;
             } 
                 
         }
     }
+
+    
+
 }
